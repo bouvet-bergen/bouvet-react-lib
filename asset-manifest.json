@@ -1,6 +1,22 @@
 {
-  "main.css": "static/css/main.65027555.css",
-  "main.css.map": "static/css/main.65027555.css.map",
-  "main.js": "static/js/main.8ec4d1c9.js",
-  "main.js.map": "static/js/main.8ec4d1c9.js.map"
+  "files": {
+    "main.css": "/bouvet-react-lib/static/css/main.a2b7b0b6.chunk.css",
+    "main.js": "/bouvet-react-lib/static/js/main.9edb28b9.chunk.js",
+    "main.js.map": "/bouvet-react-lib/static/js/main.9edb28b9.chunk.js.map",
+    "runtime-main.js": "/bouvet-react-lib/static/js/runtime-main.6bd56488.js",
+    "runtime-main.js.map": "/bouvet-react-lib/static/js/runtime-main.6bd56488.js.map",
+    "static/js/2.0abd28ba.chunk.js": "/bouvet-react-lib/static/js/2.0abd28ba.chunk.js",
+    "static/js/2.0abd28ba.chunk.js.map": "/bouvet-react-lib/static/js/2.0abd28ba.chunk.js.map",
+    "index.html": "/bouvet-react-lib/index.html",
+    "precache-manifest.9c0d2cffba05aee295c6120ef83dbd65.js": "/bouvet-react-lib/precache-manifest.9c0d2cffba05aee295c6120ef83dbd65.js",
+    "service-worker.js": "/bouvet-react-lib/service-worker.js",
+    "static/css/main.a2b7b0b6.chunk.css.map": "/bouvet-react-lib/static/css/main.a2b7b0b6.chunk.css.map",
+    "static/js/2.0abd28ba.chunk.js.LICENSE.txt": "/bouvet-react-lib/static/js/2.0abd28ba.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6bd56488.js",
+    "static/js/2.0abd28ba.chunk.js",
+    "static/css/main.a2b7b0b6.chunk.css",
+    "static/js/main.9edb28b9.chunk.js"
+  ]
 }
