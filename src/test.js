@@ -1,7 +1,13 @@
-import ExampleComponent from './'
+import { Demo, Test } from './'
 
-describe('ExampleComponent', () => {
+describe('DemoComponent', () => {
   it('is truthy', () => {
-    expect(ExampleComponent).toBeTruthy()
+    expect(Demo).toBeTruthy()
+  })
+})
+
+describe('TestComponent', () => {
+  it('is truthy', () => {
+    expect(Test).toBeTruthy()
   })
 })
