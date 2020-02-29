@@ -4,7 +4,6 @@ on: [push]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     strategy:
@@ -17,8 +16,11 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
+        registry-url: https://registry.npmjs.org/
     - run: npm install
     - run: npm run build --if-present
     - run: npm test
+    - run: npm publish
       env:
         CI: true
+        NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
