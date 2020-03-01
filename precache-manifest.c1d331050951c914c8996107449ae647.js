@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0ffb0452d3ac36eaa7a4880f4afdff7b",
+    "revision": "ad198341cb66385876f3a59c731105ff",
     "url": "/bouvet-react-lib/index.html"
   },
   {
-    "revision": "b556445bca0e3dd3ae9a",
+    "revision": "a1f8594e0c18080e2b5c",
     "url": "/bouvet-react-lib/static/css/main.a2b7b0b6.chunk.css"
   },
   {
-    "revision": "1267c0bc1aec48f11fc4",
-    "url": "/bouvet-react-lib/static/js/2.0abd28ba.chunk.js"
+    "revision": "13e0778c98a8a35f9333",
+    "url": "/bouvet-react-lib/static/js/2.fe5d0702.chunk.js"
   },
   {
     "revision": "5356fa2f66e46e6c05e4cbe319ac7f1d",
-    "url": "/bouvet-react-lib/static/js/2.0abd28ba.chunk.js.LICENSE.txt"
+    "url": "/bouvet-react-lib/static/js/2.fe5d0702.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b556445bca0e3dd3ae9a",
-    "url": "/bouvet-react-lib/static/js/main.9edb28b9.chunk.js"
+    "revision": "a1f8594e0c18080e2b5c",
+    "url": "/bouvet-react-lib/static/js/main.f16a921d.chunk.js"
   },
   {
     "revision": "5ae2573baf7646bff22c",
