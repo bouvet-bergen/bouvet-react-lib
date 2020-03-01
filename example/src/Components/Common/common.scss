@@ -1,0 +1,66 @@
+header {
+    height: 5rem;
+    flex-grow: 1;
+    margin-bottom: 2rem;
+    line-height: 4rem;
+    
+    .MuiPaper-root {
+        background-color: white;
+        color: #000;
+    }    
+
+    .logo {        
+        &__container {
+            flex-grow: 1;
+        }
+        &__img {
+            float: left;
+            max-width: 8rem;
+            margin-top: 0.3rem;
+            margin-left: 2rem;
+        }
+    }
+
+    .button {
+        &__toolbar {
+            margin-left: 6em;
+            margin-top: 0.5em;
+
+            &:last-of-type {
+                margin-right: 2rem;
+            }
+        }
+    }
+}
+
+.navigation {
+    .MuiPaper-root {
+        top:6rem;
+        min-width: 15rem;       
+    }
+}
+
+.main-container {
+    width: 70%;
+    margin: 0 auto;    
+}
+
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 1500;
+
+    .MuiBottomNavigation-root {
+        background-color: #243746 !important;
+        height: 5rem !important;
+
+        .MuiBottomNavigationAction-root {
+            color: #fff !important;
+        }
+
+        .MuiBottomNavigationAction-label {
+            margin-top: 0.5rem;
+        }
+    }
+}

@@ -1,15 +1,17 @@
 import React, { Component } from 'react'
-import { Demo, Test } from 'bouvet-react-lib'
-import Data from './data/components.json'
+import { Route } from 'react-router';
+import { Header, Footer, Layout } from './Components/Common';
+import { Home } from './Components/Home';
 
 export default class App extends Component {
-  render () {
-    var testDoc = Data.filter(x => x.displayName === 'Demo');
-    console.log(testDoc[0]);
+  render() {    
     return (
       <div>
-        <Demo text={testDoc[0].description} />
-        <Test />
+        <Header />
+        <Layout>
+          <Route exact path='/' component={Home} />
+        </Layout>
+        <Footer />
       </div>
     )
   }

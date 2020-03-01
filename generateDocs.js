@@ -6,7 +6,7 @@ const reactDocs = require("react-docgen");
 const componentFolder = "./src/Components";
 
 // Where the JSON file ends up
-const componentJsonPath = "./example/src/data/components.json";
+const componentJsonPath = "./example/src/Data/components.json";
 const componentDataArray = [];
 function pushComponent(component) {
     componentDataArray.push(component);
