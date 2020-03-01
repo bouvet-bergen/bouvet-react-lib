@@ -18,8 +18,8 @@
     "gendocs": "node generateDocs.js",
     "build": "rollup -c",
     "start": "npm run gendocs && rollup -c -w",
-    "prepare": "npm run gendocs && npm run build",
-    "predeploy": "npm run gendocs && cd example && npm install && npm run build",
+    "prepare": "npm run build",
+    "predeploy": "cd example && npm install && npm run build",
     "deploy": "gh-pages -d example/build"
   },
   "peerDependencies": {
