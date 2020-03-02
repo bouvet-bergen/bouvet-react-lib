@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Demo, Test } from 'bouvet-react-lib'
-import Data from './../../Data/components.json'
+import Data from '../../data/components.json'
 
 class Home extends Component {   
 

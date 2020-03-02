@@ -23,12 +23,12 @@
         "description": "Dette er teksten"
       }
     },
-    "filename": "git\\bouvet-react-lib\\src\\Components\\Demo\\Demo.js"
+    "filename": "..\\..\\..\\src\\Components\\Demo\\Demo.js"
   },
   {
     "description": "General component description.",
     "displayName": "Test",
     "methods": [],
-    "filename": "git\\bouvet-react-lib\\src\\Components\\Test\\Test.js"
+    "filename": "..\\..\\..\\src\\Components\\Test\\Test.js"
   }
 ]
