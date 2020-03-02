@@ -10,8 +10,6 @@
     "bouvet-react-lib": "file:..",
     "node-sass": "^4.13.1",
     "prop-types": "^15.6.2",
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1",
     "react-redux": "^7.2.0",
     "react-router": "^5.1.2",
     "react-router-dom": "^5.1.2",

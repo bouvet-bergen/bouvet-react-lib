@@ -21,20 +21,19 @@ class Navigation extends Component {
             >
                 <div className='toolbar' />
                 <List>
-                    <ListItem button key='Demo'>
+                    <ListItem>
                         <ListItemIcon><InboxIcon /></ListItemIcon>
                         <ListItemText primary='Demo' />
                     </ListItem>
-                    <Link button to="/demo">
-                        <ListItem button key='Test'>
-                            <ListItemIcon><InboxIcon /></ListItemIcon>
-                            <ListItemText primary='Test' />
-                        </ListItem>
-                    </Link>
+                    <ListItem>
+                        <ListItemIcon><InboxIcon /></ListItemIcon>
+                        <ListItemText primary='Test' />
+                    </ListItem>
+
                 </List>
                 <Divider />
                 <List>
-                    <ListItem button key='Form'>
+                    <ListItem>
                         <ListItemIcon><InboxIcon /></ListItemIcon>
                         <ListItemText primary='Form' />
                     </ListItem>
