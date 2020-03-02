@@ -1,1 +1,1 @@
-export { Demo, Test } from './Components';
+export { Demo, Test, DynamicForm } from './Components';

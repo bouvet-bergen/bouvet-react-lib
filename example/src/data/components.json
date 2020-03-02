@@ -26,9 +26,132 @@
     "filename": "..\\..\\..\\src\\Components\\Demo\\Demo.js"
   },
   {
+    "description": "",
+    "displayName": "DynamicForm",
+    "methods": [
+      {
+        "name": "handleBlur",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "e",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "handleChange",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "e",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "handleSubmit",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "value",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "renderFields",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "inputs",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "getInitialValues",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "inputs",
+            "type": null
+          }
+        ],
+        "returns": null
+      }
+    ],
+    "props": {
+      "fields": {
+        "type": {
+          "name": "array"
+        },
+        "required": true,
+        "description": "Fields description"
+      },
+      "validation": {
+        "type": {
+          "name": "object"
+        },
+        "required": true,
+        "description": ""
+      },
+      "submitText": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": ""
+      },
+      "onBlur": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
+      },
+      "onChange": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
+      },
+      "onSubmit": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
+      }
+    },
+    "filename": "..\\..\\..\\src\\Components\\DynamicForm\\DynamicForm.js"
+  },
+  {
     "description": "General component description.",
     "displayName": "Test",
     "methods": [],
     "filename": "..\\..\\..\\src\\Components\\Test\\Test.js"
+  },
+  {
+    "description": "",
+    "displayName": "DynamicInputText",
+    "methods": [],
+    "filename": "..\\..\\..\\src\\Components\\DynamicForm\\DynamicInputElements\\DynamicInputText.js"
+  },
+  {
+    "description": "",
+    "displayName": "DynamicInputSelect",
+    "methods": [],
+    "filename": "..\\..\\..\\src\\Components\\DynamicForm\\DynamicInputElements\\DynamicInputSelect.js"
   }
 ]
