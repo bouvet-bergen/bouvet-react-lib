@@ -9,18 +9,9 @@ export default class WebClient {
     }
 
     /**
-     * @param {string} baseUrl
-     */
-    set baseUrl(url) {
-        this._baseUrl = url;
-    }
-
-    /**
      * @param {string} url 
      */
-    get(url) {
-        if(this._baseUrl && this._baseUrl.length > 0)
-            return this.createRequest('get', this._baseUrl + '/' + url);
+    getData(url) {
         return this.createRequest('get', url);
     }
 
