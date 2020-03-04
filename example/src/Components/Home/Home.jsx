@@ -12,9 +12,10 @@ const validation = Yup.object().shape({
   email: Yup.string().required('Påkrevd')
 });
 
-class Home extends Component {   
-
+class Home extends Component {
+  
   render() {
+
     var testDoc = Data.filter(x => x.displayName === 'DynamicForm');
     console.log(testDoc[0]);
     return (

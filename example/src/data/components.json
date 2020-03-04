@@ -23,7 +23,7 @@
         "description": "Dette er teksten"
       }
     },
-    "filename": "..\\..\\..\\src\\Components\\Demo\\Demo.js"
+    "filename": "git\\bouvet-react-lib\\src\\Components\\Demo\\Demo.js"
   },
   {
     "description": "",
@@ -134,24 +134,24 @@
         "description": ""
       }
     },
-    "filename": "..\\..\\..\\src\\Components\\DynamicForm\\DynamicForm.js"
+    "filename": "git\\bouvet-react-lib\\src\\Components\\DynamicForm\\DynamicForm.js"
   },
   {
     "description": "General component description.",
     "displayName": "Test",
     "methods": [],
-    "filename": "..\\..\\..\\src\\Components\\Test\\Test.js"
+    "filename": "git\\bouvet-react-lib\\src\\Components\\Test\\Test.js"
   },
   {
     "description": "",
     "displayName": "DynamicInputText",
     "methods": [],
-    "filename": "..\\..\\..\\src\\Components\\DynamicForm\\DynamicInputElements\\DynamicInputText.js"
+    "filename": "git\\bouvet-react-lib\\src\\Components\\DynamicForm\\DynamicInputElements\\DynamicInputText.js"
   },
   {
     "description": "",
     "displayName": "DynamicInputSelect",
     "methods": [],
-    "filename": "..\\..\\..\\src\\Components\\DynamicForm\\DynamicInputElements\\DynamicInputSelect.js"
+    "filename": "git\\bouvet-react-lib\\src\\Components\\DynamicForm\\DynamicInputElements\\DynamicInputSelect.js"
   }
 ]
