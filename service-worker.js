@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/bouvet-react-lib/precache-manifest.d0822a0c9edbaddb1def48790a62b5bf.js"
+  "/bouvet-react-lib/precache-manifest.bdf65da8ba694015c7301de7f3360476.js"
 );
 
 self.addEventListener('message', (event) => {
