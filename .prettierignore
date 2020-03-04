@@ -1,0 +1,9 @@
+node_modules/ 
+dist/"
+.eslintrc
+.svg
+.json
+.gitignore
+.md
+.lock
+.log
