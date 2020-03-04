@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import * as Yup from 'yup';
 import { DynamicForm } from 'bouvet-react-lib';
-import Data from './../../Data/components.json';
+import Data from '../../data/components.json';
 
 const fields = [
   { label: 'Epost', id: 'email', type: 'input', name: 'email', value: '', required: true, classNames: 'email' },
