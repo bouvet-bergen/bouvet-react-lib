@@ -5,18 +5,23 @@ export default class WebClient {
         this._accessControlAllowOrigin = process.env.REACT_APP_HOST ? process.env.REACT_APP_HOST : '';
         this._cacheControl = 'no-cache';
         this._cacheStore = 'no-store';
-        this._url = '';
+        this._baseUrl = '';
     }
 
     /**
-     * @param {string} url
+     * @param {string} baseUrl
      */
-    set url(url) {
-        this._url = url;
+    set baseUrl(url) {
+        this._baseUrl = url;
     }
 
-    get get() {
-        return this.createRequest(this._url)
+    /**
+     * @param {string} url 
+     */
+    get(url) {
+        if(this._baseUrl && this._baseUrl.length > 0)
+            return this.createRequest(this._baseUrl + '/' + url);
+        return this.createRequest(url);
     }
 
     getHeader() {
@@ -37,8 +42,8 @@ export default class WebClient {
         };
     }
 
-    createRequest(url) {
-        return fetch(url, this.getRequest())
+    createRequest(method, url) {
+        return fetch(url, this.getRequest(method))
         .then(response => {
             return new Promise((resolve, reject) => {
                 if (response.status === 401) {
