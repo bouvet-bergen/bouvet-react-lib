@@ -1,5 +1,31 @@
 [
   {
+    "description": "Dette er beskrivelsen av en demo komponent.",
+    "displayName": "Demo",
+    "methods": [],
+    "props": {
+      "foo": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Description of prop \"foo\".",
+        "defaultValue": {
+          "value": "21",
+          "computed": false
+        }
+      },
+      "text": {
+        "type": {
+          "name": "string"
+        },
+        "required": true,
+        "description": "Dette er teksten"
+      }
+    },
+    "filename": "git\\bouvet-react-lib\\src\\Components\\Demo\\Demo.js"
+  },
+  {
     "description": "General component description.",
     "displayName": "Test",
     "methods": [],
@@ -117,35 +143,15 @@
     "filename": "git\\bouvet-react-lib\\src\\Components\\DynamicForm\\DynamicForm.js"
   },
   {
-    "description": "Dette er beskrivelsen av en demo komponent.",
-    "displayName": "Demo",
-    "methods": [],
-    "props": {
-      "foo": {
-        "type": {
-          "name": "number"
-        },
-        "required": false,
-        "description": "Description of prop \"foo\".",
-        "defaultValue": {
-          "value": "21",
-          "computed": false
-        }
-      },
-      "text": {
-        "type": {
-          "name": "string"
-        },
-        "required": true,
-        "description": "Dette er teksten"
-      }
-    },
-    "filename": "git\\bouvet-react-lib\\src\\Components\\Demo\\Demo.js"
-  },
-  {
     "description": "",
     "displayName": "DynamicInputText",
     "methods": [],
     "filename": "git\\bouvet-react-lib\\src\\Components\\DynamicForm\\DynamicInputElements\\DynamicInputText.js"
+  },
+  {
+    "description": "",
+    "displayName": "DynamicInputSelect",
+    "methods": [],
+    "filename": "git\\bouvet-react-lib\\src\\Components\\DynamicForm\\DynamicInputElements\\DynamicInputSelect.js"
   }
 ]
