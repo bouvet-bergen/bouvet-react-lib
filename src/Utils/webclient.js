@@ -20,8 +20,8 @@ export default class WebClient {
      */
     get(url) {
         if(this._baseUrl && this._baseUrl.length > 0)
-            return this.createRequest(this._baseUrl + '/' + url);
-        return this.createRequest(url);
+            return this.createRequest('get', this._baseUrl + '/' + url);
+        return this.createRequest('get', url);
     }
 
     getHeader() {
