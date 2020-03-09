@@ -144,14 +144,14 @@
   },
   {
     "description": "",
-    "displayName": "DynamicInputText",
-    "methods": [],
-    "filename": "git\\bouvet-react-lib\\src\\Components\\DynamicForm\\DynamicInputElements\\DynamicInputText.js"
-  },
-  {
-    "description": "",
     "displayName": "DynamicInputSelect",
     "methods": [],
     "filename": "git\\bouvet-react-lib\\src\\Components\\DynamicForm\\DynamicInputElements\\DynamicInputSelect.js"
+  },
+  {
+    "description": "",
+    "displayName": "DynamicInputText",
+    "methods": [],
+    "filename": "git\\bouvet-react-lib\\src\\Components\\DynamicForm\\DynamicInputElements\\DynamicInputText.js"
   }
 ]

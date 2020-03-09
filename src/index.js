@@ -1,2 +1,7 @@
+// Components
 export { Demo, Test, DynamicForm } from './Components';
-export { default as WebClient } from './Utils/webclient';
+
+// Modules
+export { default as RequestHeader } from './modules/webclient/RequestHeader';
+export { default as WebClient } from './modules/webclient/WebClient';
+export { RequestEnum } from './modules/webclient/RequestEnum';
