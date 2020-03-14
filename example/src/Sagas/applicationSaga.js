@@ -1,48 +1,81 @@
-import { call, put } from 'redux-saga/effects';
+import { put } from 'redux-saga/effects';
 import { types } from '../Common/types';
-import { WebClient } from 'bouvet-react-lib';
+import DataComponents from './../Data/components.json';
+import DataModules from './../Data/modules.json';
 
 export function* initApplication() {
 
     try {
+        if (DataComponents && DataModules) {
 
-        console.log('Hey init application saga!');
-        
-           
-    // let data = yield call(getData, 'posts/42');
-    // console.log(data);
-    // REACT_APP_WEBCLIENT_BASE_URL=https://jsonplaceholder.typicode.com
+            var modules = DataModules.docs.filter(item => item.kind !== 'package');
+            var moduleNames = modules.map(item => 
+                item.meta.filename.split('.').slice(0, -1).join('.')).filter((value, index, self) => self.indexOf(value) === index);
 
-    var client = new WebClient();
-    client.baseUrl = 'https://jsonplaceholder.typicode.com/';
-    const data = yield call(client.get, 'posts/42');
-    console.log(client.request());
-    console.log(data);
+            yield put({
+                type: types.application.INIT_APPLICATION_FAIL_OR_SUCCESS,
+                payload: {
+                    components: DataComponents,
+                    modules: modules,
+                    moduleNames: moduleNames,
+                    error: null
+                }
+            });
 
-    
+        } else {
 
-    //     // const data = client.get('posts/42');
+            yield put({
+                type: types.application.INIT_APPLICATION_FAIL_OR_SUCCESS,
+                payload: {
+                    components: [],
+                    modules: [],
+                    moduleNames: [],
+                    error: null
+                }
+            });
+        }
 
-    //     console.log(data);
 
-    //     const tasks = yield call(getAllTasks);
+        // var client = new WebClient();
 
-    //    yield put({
-    //         type: actionTypes.tasks.GET_TASKS_FAIL_OR_SUCCESS,
-    //         payload: {
-    //             tasks,
-    //             error: null
-    //         }
-    //     });
+        // Login
+        // const cred = {
+        //     "email": "reidar.liabo@bouvet.no",
+        //     "password": "P4ssw0rd1",
+        //     "pin": 0
+        // };
 
-    } catch (error) {       
-        console.log(error);
-        // yield put({
-        //     type: actionTypes.tasks.GET_TASKS_FAIL_OR_SUCCESS,
-        //     payload: {
-        //         tasks: [],
-        //         error: error
-        //     }
-        // });
+        // const data = yield call(client.post, 'auth', cred);       
+        // yield call (client.saveToken, data.accessToken, data.refreshToken);
+
+        // Call api
+        // const data2 = yield call(client.get, 'users/current');        
+        // console.log(data2);
+
+        // const data3 = yield call(client.get, 'users');        
+        // console.log(data3);
+
+        // const data4 = yield call(client.get, 'users/39f52368-99d5-4fa0-a8fe-dbbfdae36814');        
+        // console.log(data4);
+
+
+        //    yield put({
+        //         type: actionTypes.tasks.GET_TASKS_FAIL_OR_SUCCESS,
+        //         payload: {
+        //             tasks,
+        //             error: null
+        //         }
+        //     });
+
+    } catch {
+        yield put({
+            type: types.application.INIT_APPLICATION_FAIL_OR_SUCCESS,
+            payload: {
+                components: [],
+                modules: [],
+                moduleNames: [],
+                error: { status: 500, message: 'Could not initialize application' }
+            }
+        });
     }
 }

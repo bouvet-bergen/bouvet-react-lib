@@ -37,11 +37,17 @@ header {
     .MuiPaper-root {
         top:6rem;
         min-width: 15rem;       
+    }    
+    
+    .no-top-bottom-padding {
+        padding-top: 0;
+        padding-bottom: 0;
     }
+    
 }
 
 .main-container {
-    width: 70%;
+    width: 50%;
     margin: 0 auto;    
 }
 
@@ -64,3 +70,18 @@ footer {
         }
     }
 }
+
+@media only screen and (max-width: 1024px) {
+    .main-container {
+        width: 30%;
+        margin: 0 auto;    
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    .main-container {
+        width: 60%;
+        margin: 0 auto;    
+    }
+}
+

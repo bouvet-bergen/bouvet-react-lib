@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link} from 'react-router-dom';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
@@ -17,9 +18,11 @@ class Header extends Component {
             <header className='root'>
                 <AppBar position="static">
                     <Toolbar>
-                        <div className="logo__container">
-                            <img className="logo__img clearfix" src={logo} alt="Bouvet React Lib" />
-                        </div>
+                        <Link to="/home">
+                            <div className="logo__container">
+                                <img className="logo__img clearfix" src={logo} alt="Bouvet React Lib" />
+                            </div>
+                        </Link>
                         <Button className="button__toolbar">
                             <Forum fontSize="large"></Forum>
                             <Typography variant="button">Forum</Typography>

@@ -1,0 +1,858 @@
+{
+  "docs": [
+    {
+      "comment": "/**\r\n     * RequestHeader constructor\r\n     * @constructor\r\n     */",
+      "meta": {
+        "range": [
+          208,
+          818
+        ],
+        "filename": "RequestHeader.js",
+        "lineno": 13,
+        "columnno": 4,
+        "path": "C:\\git\\bouvet-react-lib\\src\\modules\\webclient",
+        "code": {
+          "id": "astnode100000010",
+          "name": "module.exports",
+          "type": "MethodDefinition",
+          "paramnames": []
+        }
+      },
+      "name": "exports",
+      "longname": "module.exports",
+      "kind": "class",
+      "description": "RequestHeader constructor",
+      "memberof": "module",
+      "scope": "static",
+      "classdesc": "RequestHeader",
+      "___id": "T000002R000005",
+      "___s": true
+    },
+    {
+      "comment": "/**\r\n         * The accept header\r\n         * @type {String}\r\n         * @default application/json\r\n         * @public\r\n         */",
+      "meta": {
+        "range": [
+          384,
+          416
+        ],
+        "filename": "RequestHeader.js",
+        "lineno": 21,
+        "columnno": 8,
+        "path": "C:\\git\\bouvet-react-lib\\src\\modules\\webclient",
+        "code": {
+          "id": "astnode100000015",
+          "name": "this.accept",
+          "type": "Literal",
+          "value": "application/json",
+          "paramnames": []
+        }
+      },
+      "description": "The accept header",
+      "type": {
+        "names": [
+          "String"
+        ]
+      },
+      "defaultvalue": "application/json",
+      "access": "public",
+      "name": "accept",
+      "longname": "module.exports#accept",
+      "kind": "member",
+      "memberof": "module.exports",
+      "scope": "instance",
+      "___id": "T000002R000006",
+      "___s": true
+    },
+    {
+      "comment": "/**\r\n         * The content type\r\n         * @type {String}\r\n         * @default application/json\r\n         * @public\r\n         */",
+      "meta": {
+        "range": [
+          569,
+          606
+        ],
+        "filename": "RequestHeader.js",
+        "lineno": 29,
+        "columnno": 8,
+        "path": "C:\\git\\bouvet-react-lib\\src\\modules\\webclient",
+        "code": {
+          "id": "astnode100000021",
+          "name": "this.contentType",
+          "type": "Literal",
+          "value": "application/json",
+          "paramnames": []
+        }
+      },
+      "description": "The content type",
+      "type": {
+        "names": [
+          "String"
+        ]
+      },
+      "defaultvalue": "application/json",
+      "access": "public",
+      "name": "contentType",
+      "longname": "module.exports#contentType",
+      "kind": "member",
+      "memberof": "module.exports",
+      "scope": "instance",
+      "___id": "T000002R000007",
+      "___s": true
+    },
+    {
+      "comment": "/**\r\n     * WebClient constructor - singleton\r\n     * @constructor\r\n     */",
+      "meta": {
+        "range": [
+          332,
+          2571
+        ],
+        "filename": "WebClient.js",
+        "lineno": 15,
+        "columnno": 4,
+        "path": "C:\\git\\bouvet-react-lib\\src\\modules\\webclient",
+        "code": {
+          "id": "astnode100000116",
+          "name": "module.exports",
+          "type": "MethodDefinition",
+          "paramnames": []
+        }
+      },
+      "name": "exports",
+      "longname": "module.exports",
+      "kind": "class",
+      "description": "WebClient constructor - singleton",
+      "memberof": "module",
+      "scope": "static",
+      "classdesc": "WebClient",
+      "___id": "T000002R000023",
+      "___s": true
+    },
+    {
+      "comment": "/**\r\n         * default, no-store, reload, no-cache, force-cache, only-if-cached\r\n         * @type {String}\r\n         * @default no-cache\r\n         * @public\r\n         */",
+      "meta": {
+        "range": [
+          627,
+          667
+        ],
+        "filename": "WebClient.js",
+        "lineno": 26,
+        "columnno": 8,
+        "path": "C:\\git\\bouvet-react-lib\\src\\modules\\webclient",
+        "code": {
+          "id": "astnode100000132",
+          "name": "this.cache",
+          "type": "MemberExpression",
+          "value": "WebClientEnum.Cache.NoCache",
+          "paramnames": []
+        }
+      },
+      "description": "default, no-store, reload, no-cache, force-cache, only-if-cached",
+      "type": {
+        "names": [
+          "String"
+        ]
+      },
+      "defaultvalue": "no-cache",
+      "access": "public",
+      "name": "cache",
+      "longname": "module.exports#cache",
+      "kind": "member",
+      "memberof": "module.exports",
+      "scope": "instance",
+      "___id": "T000002R000024",
+      "___s": true
+    },
+    {
+      "comment": "/**\r\n         * get, post, put, delete\r\n         * @type {String}\r\n         * @default empty\r\n         * @public\r\n         */",
+      "meta": {
+        "range": [
+          815,
+          831
+        ],
+        "filename": "WebClient.js",
+        "lineno": 34,
+        "columnno": 8,
+        "path": "C:\\git\\bouvet-react-lib\\src\\modules\\webclient",
+        "code": {
+          "id": "astnode100000142",
+          "name": "this.method",
+          "type": "Literal",
+          "value": "",
+          "paramnames": []
+        }
+      },
+      "description": "get, post, put, delete",
+      "type": {
+        "names": [
+          "String"
+        ]
+      },
+      "defaultvalue": "empty",
+      "access": "public",
+      "name": "method",
+      "longname": "module.exports#method",
+      "kind": "member",
+      "memberof": "module.exports",
+      "scope": "instance",
+      "___id": "T000002R000025",
+      "___s": true
+    },
+    {
+      "comment": "/**\r\n         * RequestHeader\r\n         * @type {RequestHeader}\r\n         * @default default\r\n         * @public\r\n         */",
+      "meta": {
+        "range": [
+          979,
+          1019
+        ],
+        "filename": "WebClient.js",
+        "lineno": 42,
+        "columnno": 8,
+        "path": "C:\\git\\bouvet-react-lib\\src\\modules\\webclient",
+        "code": {
+          "id": "astnode100000148",
+          "name": "this.requestHeader",
+          "type": "NewExpression",
+          "value": "",
+          "paramnames": []
+        }
+      },
+      "description": "RequestHeader",
+      "type": {
+        "names": [
+          "RequestHeader"
+        ]
+      },
+      "defaultvalue": "default",
+      "access": "public",
+      "name": "requestHeader",
+      "longname": "module.exports#requestHeader",
+      "kind": "member",
+      "memberof": "module.exports",
+      "scope": "instance",
+      "___id": "T000002R000026",
+      "___s": true
+    },
+    {
+      "comment": "/**\r\n         * The request body\r\n         * @type {Object}\r\n         * @default null\r\n         * @public\r\n         */",
+      "meta": {
+        "range": [
+          1160,
+          1176
+        ],
+        "filename": "WebClient.js",
+        "lineno": 50,
+        "columnno": 8,
+        "path": "C:\\git\\bouvet-react-lib\\src\\modules\\webclient",
+        "code": {
+          "id": "astnode100000155",
+          "name": "this.body",
+          "type": "Literal",
+          "value": null,
+          "paramnames": []
+        }
+      },
+      "description": "The request body",
+      "type": {
+        "names": [
+          "Object"
+        ]
+      },
+      "defaultvalue": "null",
+      "access": "public",
+      "name": "body",
+      "longname": "module.exports#body",
+      "kind": "member",
+      "memberof": "module.exports",
+      "scope": "instance",
+      "___id": "T000002R000027",
+      "___s": true
+    },
+    {
+      "comment": "/**\r\n         * cors, no-cors, navigate, websocket\r\n         * @type {String}\r\n         * @default cors\r\n         * @public\r\n         */",
+      "meta": {
+        "range": [
+          1335,
+          1370
+        ],
+        "filename": "WebClient.js",
+        "lineno": 58,
+        "columnno": 8,
+        "path": "C:\\git\\bouvet-react-lib\\src\\modules\\webclient",
+        "code": {
+          "id": "astnode100000161",
+          "name": "this.mode",
+          "type": "MemberExpression",
+          "value": "WebClientEnum.Mode.Cors",
+          "paramnames": []
+        }
+      },
+      "description": "cors, no-cors, navigate, websocket",
+      "type": {
+        "names": [
+          "String"
+        ]
+      },
+      "defaultvalue": "cors",
+      "access": "public",
+      "name": "mode",
+      "longname": "module.exports#mode",
+      "kind": "member",
+      "memberof": "module.exports",
+      "scope": "instance",
+      "___id": "T000002R000028",
+      "___s": true
+    },
+    {
+      "comment": "/**\r\n         * omit, same-origin, include\r\n         * @type {String}\r\n         * @default same-origin\r\n         * @public\r\n         */",
+      "meta": {
+        "range": [
+          1528,
+          1583
+        ],
+        "filename": "WebClient.js",
+        "lineno": 66,
+        "columnno": 8,
+        "path": "C:\\git\\bouvet-react-lib\\src\\modules\\webclient",
+        "code": {
+          "id": "astnode100000171",
+          "name": "this.credentials",
+          "type": "MemberExpression",
+          "value": "WebClientEnum.Credentials.SameOrigin",
+          "paramnames": []
+        }
+      },
+      "description": "omit, same-origin, include",
+      "type": {
+        "names": [
+          "String"
+        ]
+      },
+      "defaultvalue": "same-origin",
+      "access": "public",
+      "name": "credentials",
+      "longname": "module.exports#credentials",
+      "kind": "member",
+      "memberof": "module.exports",
+      "scope": "instance",
+      "___id": "T000002R000029",
+      "___s": true
+    },
+    {
+      "comment": "/**\r\n         * follow, error, manual\r\n         * @type {String}\r\n         * @default follow\r\n         * @public\r\n         */",
+      "meta": {
+        "range": [
+          1731,
+          1776
+        ],
+        "filename": "WebClient.js",
+        "lineno": 74,
+        "columnno": 8,
+        "path": "C:\\git\\bouvet-react-lib\\src\\modules\\webclient",
+        "code": {
+          "id": "astnode100000181",
+          "name": "this.redirect",
+          "type": "MemberExpression",
+          "value": "WebClientEnum.Redirect.Follow",
+          "paramnames": []
+        }
+      },
+      "description": "follow, error, manual",
+      "type": {
+        "names": [
+          "String"
+        ]
+      },
+      "defaultvalue": "follow",
+      "access": "public",
+      "name": "redirect",
+      "longname": "module.exports#redirect",
+      "kind": "member",
+      "memberof": "module.exports",
+      "scope": "instance",
+      "___id": "T000002R000030",
+      "___s": true
+    },
+    {
+      "comment": "/**\r\n         * empty, no-referrer, no-referrer-when-downgrade, same-origin, origin, strict-origin, origin-when-cross-origin, strict-origin-when-cross-origin, unsafe-url\r\n         * @type {String}\r\n         * @default no-referrer\r\n         * @public\r\n         */",
+      "meta": {
+        "range": [
+          2061,
+          2122
+        ],
+        "filename": "WebClient.js",
+        "lineno": 82,
+        "columnno": 8,
+        "path": "C:\\git\\bouvet-react-lib\\src\\modules\\webclient",
+        "code": {
+          "id": "astnode100000191",
+          "name": "this.referrerPolicy",
+          "type": "MemberExpression",
+          "value": "WebClientEnum.ReferrerPolicy.NoReferrer",
+          "paramnames": []
+        }
+      },
+      "description": "empty, no-referrer, no-referrer-when-downgrade, same-origin, origin, strict-origin, origin-when-cross-origin, strict-origin-when-cross-origin, unsafe-url",
+      "type": {
+        "names": [
+          "String"
+        ]
+      },
+      "defaultvalue": "no-referrer",
+      "access": "public",
+      "name": "referrerPolicy",
+      "longname": "module.exports#referrerPolicy",
+      "kind": "member",
+      "memberof": "module.exports",
+      "scope": "instance",
+      "___id": "T000002R000031",
+      "___s": true
+    },
+    {
+      "comment": "/**\r\n         * The default url\r\n         * @type {String}\r\n         * @default empty\r\n         * @public\r\n         */",
+      "meta": {
+        "range": [
+          2263,
+          2280
+        ],
+        "filename": "WebClient.js",
+        "lineno": 90,
+        "columnno": 8,
+        "path": "C:\\git\\bouvet-react-lib\\src\\modules\\webclient",
+        "code": {
+          "id": "astnode100000201",
+          "name": "this.baseUrl",
+          "type": "Literal",
+          "value": "",
+          "paramnames": []
+        }
+      },
+      "description": "The default url",
+      "type": {
+        "names": [
+          "String"
+        ]
+      },
+      "defaultvalue": "empty",
+      "access": "public",
+      "name": "baseUrl",
+      "longname": "module.exports#baseUrl",
+      "kind": "member",
+      "memberof": "module.exports",
+      "scope": "instance",
+      "___id": "T000002R000032",
+      "___s": true
+    },
+    {
+      "comment": "/**\r\n         * local-storage, cookie\r\n         * @type {String}\r\n         * @default local-storage\r\n         * @public\r\n         */",
+      "meta": {
+        "range": [
+          2435,
+          2503
+        ],
+        "filename": "WebClient.js",
+        "lineno": 98,
+        "columnno": 8,
+        "path": "C:\\git\\bouvet-react-lib\\src\\modules\\webclient",
+        "code": {
+          "id": "astnode100000207",
+          "name": "this.tokenStorage",
+          "type": "MemberExpression",
+          "value": "WebClientEnum.Settings.TokenStorage.LocalStorage",
+          "paramnames": []
+        }
+      },
+      "description": "local-storage, cookie",
+      "type": {
+        "names": [
+          "String"
+        ]
+      },
+      "defaultvalue": "local-storage",
+      "access": "public",
+      "name": "tokenStorage",
+      "longname": "module.exports#tokenStorage",
+      "kind": "member",
+      "memberof": "module.exports",
+      "scope": "instance",
+      "___id": "T000002R000033",
+      "___s": true
+    },
+    {
+      "comment": "/**\r\n     * Use this method to do a get web-request. \r\n     * @method\r\n     * @example\r\n     * const client = new WebClient();\r\n     * @example\r\n     * const data = yield call(client.get, '/users/3');\r\n     * @param  {String} url The url to the get request. If baseUrl - baseUrl + url\r\n     * @return {Promise} Returns the resolved promise\r\n     */",
+      "meta": {
+        "range": [
+          2933,
+          3051
+        ],
+        "filename": "WebClient.js",
+        "lineno": 114,
+        "columnno": 4,
+        "path": "C:\\git\\bouvet-react-lib\\src\\modules\\webclient",
+        "code": {
+          "id": "astnode100000226",
+          "name": "get",
+          "type": "ClassProperty"
+        }
+      },
+      "description": "Use this method to do a get web-request.",
+      "kind": "function",
+      "examples": [
+        "const client = new WebClient();",
+        "const data = yield call(client.get, '/users/3');"
+      ],
+      "params": [
+        {
+          "type": {
+            "names": [
+              "String"
+            ]
+          },
+          "description": "The url to the get request. If baseUrl - baseUrl + url",
+          "name": "url"
+        }
+      ],
+      "returns": [
+        {
+          "type": {
+            "names": [
+              "Promise"
+            ]
+          },
+          "description": "Returns the resolved promise"
+        }
+      ],
+      "name": "get",
+      "longname": "module.exports#get",
+      "memberof": "module.exports",
+      "scope": "instance",
+      "___id": "T000002R000035",
+      "___s": true
+    },
+    {
+      "comment": "/**\r\n     * post\r\n     * @method\r\n     * @param  {String} url The url to the post request. If baseUrl - baseUrl + url\r\n     * @param  {Object} body The object to send as a part of request body\r\n     * @return {Promise} Returns the resolved promise\r\n     */",
+      "meta": {
+        "range": [
+          3321,
+          3548
+        ],
+        "filename": "WebClient.js",
+        "lineno": 127,
+        "columnno": 4,
+        "path": "C:\\git\\bouvet-react-lib\\src\\modules\\webclient",
+        "code": {
+          "id": "astnode100000248",
+          "name": "post",
+          "type": "ClassProperty"
+        }
+      },
+      "description": "post",
+      "kind": "function",
+      "params": [
+        {
+          "type": {
+            "names": [
+              "String"
+            ]
+          },
+          "description": "The url to the post request. If baseUrl - baseUrl + url",
+          "name": "url"
+        },
+        {
+          "type": {
+            "names": [
+              "Object"
+            ]
+          },
+          "description": "The object to send as a part of request body",
+          "name": "body"
+        }
+      ],
+      "returns": [
+        {
+          "type": {
+            "names": [
+              "Promise"
+            ]
+          },
+          "description": "Returns the resolved promise"
+        }
+      ],
+      "name": "post",
+      "longname": "module.exports#post",
+      "memberof": "module.exports",
+      "scope": "instance",
+      "___id": "T000002R000038",
+      "___s": true
+    },
+    {
+      "comment": "/**\r\n     * put\r\n     * @method\r\n     * @param  {String} url The url to the put request. If baseUrl - baseUrl + url\r\n     * @param  {Object} body The object to send as a part of request body\r\n     * @return {Promise} Returns the resolved promise\r\n     */",
+      "meta": {
+        "range": [
+          3816,
+          4041
+        ],
+        "filename": "WebClient.js",
+        "lineno": 144,
+        "columnno": 4,
+        "path": "C:\\git\\bouvet-react-lib\\src\\modules\\webclient",
+        "code": {
+          "id": "astnode100000285",
+          "name": "put",
+          "type": "ClassProperty"
+        }
+      },
+      "description": "put",
+      "kind": "function",
+      "params": [
+        {
+          "type": {
+            "names": [
+              "String"
+            ]
+          },
+          "description": "The url to the put request. If baseUrl - baseUrl + url",
+          "name": "url"
+        },
+        {
+          "type": {
+            "names": [
+              "Object"
+            ]
+          },
+          "description": "The object to send as a part of request body",
+          "name": "body"
+        }
+      ],
+      "returns": [
+        {
+          "type": {
+            "names": [
+              "Promise"
+            ]
+          },
+          "description": "Returns the resolved promise"
+        }
+      ],
+      "name": "put",
+      "longname": "module.exports#put",
+      "memberof": "module.exports",
+      "scope": "instance",
+      "___id": "T000002R000042",
+      "___s": true
+    },
+    {
+      "comment": "/**\r\n     * delete\r\n     * @method\r\n     * @param  {String} url The url to the delete request. If baseUrl - baseUrl + url\r\n     * @return {Promise} Returns the resolved promise\r\n     */",
+      "meta": {
+        "range": [
+          4240,
+          4364
+        ],
+        "filename": "WebClient.js",
+        "lineno": 160,
+        "columnno": 4,
+        "path": "C:\\git\\bouvet-react-lib\\src\\modules\\webclient",
+        "code": {
+          "id": "astnode100000322",
+          "name": "delete",
+          "type": "ClassProperty"
+        }
+      },
+      "description": "delete",
+      "kind": "function",
+      "params": [
+        {
+          "type": {
+            "names": [
+              "String"
+            ]
+          },
+          "description": "The url to the delete request. If baseUrl - baseUrl + url",
+          "name": "url"
+        }
+      ],
+      "returns": [
+        {
+          "type": {
+            "names": [
+              "Promise"
+            ]
+          },
+          "description": "Returns the resolved promise"
+        }
+      ],
+      "name": "delete",
+      "longname": "module.exports#delete",
+      "memberof": "module.exports",
+      "scope": "instance",
+      "___id": "T000002R000046",
+      "___s": true
+    },
+    {
+      "comment": "/**\r\n     * saveToken - Saves the token if tokenStorage is local-storage\r\n     * @method\r\n     * @param  {String} accesstoken The accessToken\r\n     * @param  {String} refreshToken The refreshToken\r\n     */",
+      "meta": {
+        "range": [
+          4583,
+          4996
+        ],
+        "filename": "WebClient.js",
+        "lineno": 172,
+        "columnno": 4,
+        "path": "C:\\git\\bouvet-react-lib\\src\\modules\\webclient",
+        "code": {
+          "id": "astnode100000344",
+          "name": "saveToken",
+          "type": "ClassProperty"
+        }
+      },
+      "description": "saveToken - Saves the token if tokenStorage is local-storage",
+      "kind": "function",
+      "params": [
+        {
+          "type": {
+            "names": [
+              "String"
+            ]
+          },
+          "description": "The accessToken",
+          "name": "accesstoken"
+        },
+        {
+          "type": {
+            "names": [
+              "String"
+            ]
+          },
+          "description": "The refreshToken",
+          "name": "refreshToken"
+        }
+      ],
+      "name": "saveToken",
+      "longname": "module.exports#saveToken",
+      "memberof": "module.exports",
+      "scope": "instance",
+      "___id": "T000002R000049",
+      "___s": true
+    },
+    {
+      "comment": "/**\r\n     * removeToken - Removes the the accessToken and refreshToken from local storage \r\n     * @method\r\n     */",
+      "meta": {
+        "range": [
+          5125,
+          5254
+        ],
+        "filename": "WebClient.js",
+        "lineno": 189,
+        "columnno": 4,
+        "path": "C:\\git\\bouvet-react-lib\\src\\modules\\webclient",
+        "code": {
+          "id": "astnode100000387",
+          "name": "removeToken",
+          "type": "ClassProperty"
+        }
+      },
+      "description": "removeToken - Removes the the accessToken and refreshToken from local storage",
+      "kind": "function",
+      "name": "removeToken",
+      "longname": "module.exports#removeToken",
+      "memberof": "module.exports",
+      "scope": "instance",
+      "___id": "T000002R000050",
+      "___s": true
+    },
+    {
+      "comment": "/**\r\n     * request\r\n     * @method\r\n     * @return {Object} The generated request object\r\n     */",
+      "meta": {
+        "range": [
+          5366,
+          5798
+        ],
+        "filename": "WebClient.js",
+        "lineno": 199,
+        "columnno": 4,
+        "path": "C:\\git\\bouvet-react-lib\\src\\modules\\webclient",
+        "code": {
+          "id": "astnode100000402",
+          "name": "request",
+          "type": "ClassProperty"
+        }
+      },
+      "description": "request",
+      "kind": "function",
+      "returns": [
+        {
+          "type": {
+            "names": [
+              "Object"
+            ]
+          },
+          "description": "The generated request object"
+        }
+      ],
+      "name": "request",
+      "longname": "module.exports#request",
+      "memberof": "module.exports",
+      "scope": "instance",
+      "___id": "T000002R000051",
+      "___s": true
+    },
+    {
+      "comment": "/**\r\n     * call - Calling api on given url. The method and body used, is properties method and body.\r\n     * @method\r\n     * @param  {String} url The url to the request. If baseUrl - baseUrl + url\r\n     * @return {Promise} Returns the resolved promise\r\n     */",
+      "meta": {
+        "range": [
+          6073,
+          8003
+        ],
+        "filename": "WebClient.js",
+        "lineno": 222,
+        "columnno": 4,
+        "path": "C:\\git\\bouvet-react-lib\\src\\modules\\webclient",
+        "code": {
+          "id": "astnode100000454",
+          "name": "call",
+          "type": "ClassProperty"
+        }
+      },
+      "description": "call - Calling api on given url. The method and body used, is properties method and body.",
+      "kind": "function",
+      "params": [
+        {
+          "type": {
+            "names": [
+              "String"
+            ]
+          },
+          "description": "The url to the request. If baseUrl - baseUrl + url",
+          "name": "url"
+        }
+      ],
+      "returns": [
+        {
+          "type": {
+            "names": [
+              "Promise"
+            ]
+          },
+          "description": "Returns the resolved promise"
+        }
+      ],
+      "name": "call",
+      "longname": "module.exports#call",
+      "memberof": "module.exports",
+      "scope": "instance",
+      "___id": "T000002R000061",
+      "___s": true
+    },
+    {
+      "kind": "package",
+      "longname": "package:undefined",
+      "files": [
+        "C:\\git\\bouvet-react-lib\\src\\modules\\webclient\\RequestHeader.js",
+        "C:\\git\\bouvet-react-lib\\src\\modules\\webclient\\WebClient.js",
+        "C:\\git\\bouvet-react-lib\\src\\modules\\webclient\\WebClientEnum.js",
+        "C:\\git\\bouvet-react-lib\\src\\modules\\webclient\\WebClientError.js",
+        "C:\\git\\bouvet-react-lib\\src\\modules\\webclient\\WebClientMiddleware.js"
+      ],
+      "___id": "T000002R000122",
+      "___s": true
+    }
+  ]
+}

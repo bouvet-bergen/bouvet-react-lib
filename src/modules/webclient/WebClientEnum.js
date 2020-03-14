@@ -1,4 +1,4 @@
-export const RequestEnum = {
+export const WebClientEnum = {
     Cache: {
         Default: 'default',
         NoStore: 'no-store',
@@ -34,5 +34,11 @@ export const RequestEnum = {
         OriginWhenCrossOrigin: "origin-when-cross-origin",
         StrictOriginWhenCrossOrigin: "strict-origin-when-cross-origin",
         UnsafeUrl: "unsafe-url"   
-    }
+    },
+    Settings: {
+        TokenStorage: {
+            LocalStorage: "local-storage",
+            Cookie: "cookie"
+        }
+    }    
 }
